@@ -8,8 +8,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
 
 import ABI from "../../../blockchain/build/contracts/AddProduction.json";
 
@@ -44,7 +42,6 @@ export default {
     }
   },
   components: {
-    HelloWorld
   }
 };
 </script>
@@ -58,7 +55,7 @@ export default {
   right: 0;
   width: 60%;
   height: 200px;
-  margin-top: 200px;
+  margin-top: 300px;
   width: 48%;
 }
 
