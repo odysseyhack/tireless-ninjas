@@ -4,7 +4,7 @@ contract CertificationContract {
     
     struct Application {
         uint8 eanCode;
-        uint8 yearlyProduction; //MWh
+        uint8 productionAmount; //MWh
         uint8 peakProduction; //MW peak
         bool certified;
     }
@@ -15,16 +15,15 @@ contract CertificationContract {
     constructor() public {
         applicant = msg.sender;
         applications[applicant].certified = false;
-        applications[applicant].yearlyProduction = 0;
+        applications[applicant].productionAmount = 0;
     }
     
     event certified(uint production);
     
-    function cerify(uint8 yearlyProduction) public {
-        
-        if (msg.sender != applicant || applications[applicant].certified || yearlyProduction <= 1) return;
+    function cerify(uint8 productionInput) public {
+        applications[applicant].productionAmount += productionInput;
+        if (msg.sender != applicant || applications[applicant].certified || applications[applicant].productionAmount <= 1000) return;
         applications[applicant].certified = true;
-        applications[applicant].yearlyProduction = yearlyProduction;
-        emit certified(yearlyProduction);
+        emit certified(applications[applicant].productionAmount);
     }
 }
