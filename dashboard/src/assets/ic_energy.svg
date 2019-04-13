@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="74px" viewBox="0 0 43 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 21</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="75.5902778%" y1="0%" x2="-10.1273148%" y2="141.064815%" id="linearGradient-1">
+            <stop stop-color="#FD9F77" offset="0%"></stop>
+            <stop stop-color="#FD427C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-276.000000, -335.000000)" fill="url(#linearGradient-1)">
+            <polygon id="Path-21" points="307.923883 335 276 376.945574 294.013514 376.945574 286 409 319 367.214767 300.695946 367.214767"></polygon>
+        </g>
+    </g>
+</svg>

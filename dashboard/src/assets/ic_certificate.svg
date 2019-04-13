@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="96px" viewBox="0 0 75 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_certificate</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="75.5902778%" y1="0%" x2="-10.1273148%" y2="141.064815%" id="linearGradient-1">
+            <stop stop-color="#FD9F77" offset="0%"></stop>
+            <stop stop-color="#FD427C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="13.3773053%" x2="59.1143651%" y2="96.7984271%" id="linearGradient-2">
+            <stop stop-color="#EDEFF6" offset="4.25397399%"></stop>
+            <stop stop-color="#E7ECF7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="39.9942367%" x2="50%" y2="94.6945441%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#D2D7E3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-748.000000, -324.000000)">
+            <g id="ic_certificate" transform="translate(733.000000, 312.000000)">
+                <ellipse id="Oval" fill="url(#linearGradient-1)" transform="translate(52.506082, 60.056380) rotate(27.000000) translate(-52.506082, -60.056380) " cx="52.5060823" cy="60.0563797" rx="33.2853352" ry="50.2520708"></ellipse>
+                <g id="Group-29" transform="translate(31.650660, 22.474916)">
+                    <g id="Group-4">
+                        <path d="M6.9828794,24.9132972 L6.9828794,56.27391 L6.9828794,70.0284215 L4.25044833,74.0491697 L37.9186246,54.8258009 C40.4297512,53.3920341 41.9796939,50.7222778 41.9796939,47.8306616 L41.9796939,5.31816554 L6.9828794,24.9132972 Z" id="Fill-2-Copy" fill="#FFFFFF"></path>
+                        <polygon id="Fill-2-Copy-3" fill="#EDF1F9" points="8.49655947 17.516437 8.49655947 32.7098742 42.0469095 15.2521836 36.9316095 1.62448447"></polygon>
+                        <polygon id="Fill-2-Copy-2" fill="#FFFFFF" points="8.80450012 16.0400797 8.80450012 31.5297712 42.0490781 14.0720806 37.4950264 0.148127164"></polygon>
+                        <g id="Group-18" transform="translate(13.358552, 24.182857)" fill="#F2F6FF" opacity="0.29296875" stroke="#1A1A3E" stroke-linecap="round" stroke-width="0.9">
+                            <path d="M0,12.5382672 L22.154989,0.0285711219" id="Path-2-Copy-11"></path>
+                            <path d="M0,17.2783365 L22.154989,4.76864037" id="Path-2-Copy-12"></path>
+                            <path d="M0,22.3146601 L22.154989,9.80496396" id="Path-2-Copy-14"></path>
+                            <path d="M0,27.647238 L10.4996446,21.7186698" id="Path-2-Copy-13"></path>
+                        </g>
+                        <path d="M0,69.3091004 C0,72.0087768 1.5631708,74.1972969 3.4914397,74.1972969 C5.4197086,74.1972969 6.9828794,72.0087768 6.9828794,69.3091004 L6.9828794,56.1257828 L0,60.5695978 L0,69.3091004 Z" id="Oval-4" fill="url(#linearGradient-2)"></path>
+                    </g>
+                    <g id="Group-30" transform="translate(6.933002, 0.000000)">
+                        <path d="M27.9731547,8.94951676 C27.9731547,11.7140675 29.5386556,13.9551787 31.469799,13.9551787 C33.4009423,13.9551787 34.9664433,11.7140675 34.9664433,8.94951676 L34.9664433,0.265451768 L27.9731547,7.10542736e-15 L27.9731547,8.94951676 Z" id="Oval-4-Copy-2" fill="#FFFFFF" transform="translate(31.469799, 6.977589) scale(1, -1) translate(-31.469799, -6.977589) "></path>
+                        <path d="M0,33.5227662 C0,36.2873169 1.56550099,38.5284281 3.49664433,38.5284281 C5.42778767,38.5284281 6.99328866,36.2873169 6.99328866,33.5227662 L6.99328866,20.0226477 L0,15.4720459 L0,33.5227662 Z" id="Oval-4-Copy" fill="url(#linearGradient-3)" transform="translate(3.496644, 27.000237) scale(1, -1) translate(-3.496644, -27.000237) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
