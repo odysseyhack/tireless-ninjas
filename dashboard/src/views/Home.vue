@@ -48,11 +48,7 @@ export default {
       production: 0,
       productionList: [],
       timeList: [],
-      chartdata: {
-        labels: [],
-        datasets: [
-        ]
-      },
+      chartdata: null,
       options: {
         responsive: true,
         maintainAspectRatio: false,
@@ -89,6 +85,9 @@ export default {
     this.productionList = this.getValues(householdData, 'Cumulative');
     this.timeList = this.getValues(householdData, 'Datum');
     this.fillData();
+  },
+  computed() {
+
   },
   methods: {
     fillData() {
