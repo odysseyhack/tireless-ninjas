@@ -1,637 +1,1206 @@
 [
   {
     "Datum": "2017-01-01 00:00:00",
-    "Cumulative": 0,
-    "TGO": "No"
+    "Tcumulative": 0,
+    "Ncumulative": 0,
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-01-05 00:00:00",
-    "Cumulative": "-0,9375",
-    "TGO": "No"
+    "Tcumulative": "-0,9375",
+    "Ncumulative": "-1,31026255717431",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-01-09 00:00:00",
-    "Cumulative": "-3,23575",
-    "TGO": "No"
+    "Tcumulative": "-3,23575",
+    "Ncumulative": "-4,06528427102667",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-01-13 00:00:00",
-    "Cumulative": "-4,2025",
-    "TGO": "No"
+    "Tcumulative": "-4,2025",
+    "Ncumulative": "-5,40233219512307",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-01-17 00:00:00",
-    "Cumulative": "-5,16975",
-    "TGO": "No"
+    "Tcumulative": "-5,16975",
+    "Ncumulative": "-6,75823397916037",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-01-21 00:00:00",
-    "Cumulative": "-7,21725",
-    "TGO": "No"
+    "Tcumulative": "-7,21725",
+    "Ncumulative": "-9,42946770410624",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-01-21 11:30:00",
+    "Tcumulative": "-7,668",
+    "Ncumulative": "-10,0358619960875",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-01-25 00:00:00",
-    "Cumulative": "-9,25625",
-    "TGO": "No"
+    "Tcumulative": "-9,25625",
+    "Ncumulative": "-12,0868313855947",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-01-25 12:30:00",
-    "Cumulative": "-10,08",
-    "TGO": "Yes"
+    "Tcumulative": "-10,08",
+    "Ncumulative": "-13,0899445544104",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-01-29 00:00:00",
-    "Cumulative": "-12,81325",
-    "TGO": "No"
+    "Tcumulative": "-12,81325",
+    "Ncumulative": "-16,4551015203994",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-02-02 00:00:00",
-    "Cumulative": "-13,93525",
-    "TGO": "No"
+    "Tcumulative": "-13,93525",
+    "Ncumulative": "-17,9362973033935",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-02-05 11:00:00",
+    "Tcumulative": "-15,291",
+    "Ncumulative": "-20,0086486630742",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-02-06 00:00:00",
-    "Cumulative": "-15,5385",
-    "TGO": "No"
+    "Tcumulative": "-15,5385",
+    "Ncumulative": "-20,4126732226915",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-02-10 00:00:00",
-    "Cumulative": "-15,73175",
-    "TGO": "No"
+    "Tcumulative": "-15,73175",
+    "Ncumulative": "-20,7679750464429",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-02-14 00:00:00",
-    "Cumulative": "-17,5095",
-    "TGO": "No"
+    "Tcumulative": "-17,5095",
+    "Ncumulative": "-23,0258545995359",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-02-18 00:00:00",
-    "Cumulative": "-19,9815",
-    "TGO": "No"
+    "Tcumulative": "-19,9815",
+    "Ncumulative": "-26,4636574943383",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-02-18 10:30:00",
-    "Cumulative": "-20,0315",
-    "TGO": "Yes"
+    "Tcumulative": "-20,0315",
+    "Ncumulative": "-26,5513594792508",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-02-22 00:00:00",
-    "Cumulative": "-21,86525",
-    "TGO": "No"
+    "Tcumulative": "-21,86525",
+    "Ncumulative": "-28,9297132027955",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-02-24 11:00:00",
+    "Tcumulative": "-22,766",
+    "Ncumulative": "-30,0410015087968",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-02-26 00:00:00",
-    "Cumulative": "-24,099",
-    "TGO": "No"
+    "Tcumulative": "-24,099",
+    "Ncumulative": "-31,6008891118133",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-03-02 00:00:00",
-    "Cumulative": "-25,2245",
-    "TGO": "No"
+    "Tcumulative": "-25,2245",
+    "Ncumulative": "-33,2029531746202",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-03-06 00:00:00",
-    "Cumulative": "-26,956",
-    "TGO": "No"
+    "Tcumulative": "-26,956",
+    "Ncumulative": "-35,5737610169345",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-03-10 00:00:00",
-    "Cumulative": "-27,9135",
-    "TGO": "No"
+    "Tcumulative": "-27,9135",
+    "Ncumulative": "-37,0045304636595",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-03-11 10:15:00",
-    "Cumulative": "-30,057",
-    "TGO": "Yes"
+    "Tcumulative": "-30,057",
+    "Ncumulative": "-39,7198814558776",
+    "TGO": "Yes",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-03-11 11:30:00",
+    "Tcumulative": "-30,2895",
+    "Ncumulative": "-40,0040429725096",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-03-14 00:00:00",
-    "Cumulative": "-33,61975",
-    "TGO": "No"
+    "Tcumulative": "-33,61975",
+    "Ncumulative": "-44,3285699354615",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-03-16 10:45:00",
+    "Tcumulative": "-38,4605",
+    "Ncumulative": "-50,0608462581929",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-03-16 16:30:00",
-    "Cumulative": "-40,00475",
-    "TGO": "Yes"
+    "Tcumulative": "-40,00475",
+    "Ncumulative": "-51,8579557424846",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-03-18 00:00:00",
-    "Cumulative": "-41,29425",
-    "TGO": "No"
+    "Tcumulative": "-41,29425",
+    "Ncumulative": "-53,5590955809569",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-03-22 00:00:00",
-    "Cumulative": "-43,46525",
-    "TGO": "No"
+    "Tcumulative": "-43,46525",
+    "Ncumulative": "-56,1731086306971",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-03-23 10:15:00",
+    "Tcumulative": "-46,8695",
+    "Ncumulative": "-60,0834390824704",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-03-24 12:45:00",
-    "Cumulative": "-50,04075",
-    "TGO": "Yes"
+    "Tcumulative": "-50,04075",
+    "Ncumulative": "-63,7662442471457",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-03-26 00:00:00",
-    "Cumulative": "-53,6987499999999",
-    "TGO": "No"
+    "Tcumulative": "-53,6987499999999",
+    "Ncumulative": "-67,9948058183404",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-03-27 10:00:00",
+    "Tcumulative": "-55,36575",
+    "Ncumulative": "-70,0344630824606",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-03-30 00:00:00",
-    "Cumulative": "-59,8027499999999",
-    "TGO": "No"
+    "Tcumulative": "-59,8027499999999",
+    "Ncumulative": "-75,2808785685031",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-03-30 09:45:00",
-    "Cumulative": "-60,0237499999999",
-    "TGO": "Yes"
+    "Tcumulative": "-60,0237499999999",
+    "Ncumulative": "-75,6040249079266",
+    "TGO": "Yes",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-04-02 11:00:00",
+    "Tcumulative": "-63,5529999999999",
+    "Ncumulative": "-80,1041374393863",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-04-03 00:00:00",
-    "Cumulative": "-65,0467499999999",
-    "TGO": "No"
+    "Tcumulative": "-65,0467499999999",
+    "Ncumulative": "-81,8800807465847",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-04-06 14:45:00",
-    "Cumulative": "-70,0054999999999",
-    "TGO": "Yes"
+    "Tcumulative": "-70,0054999999999",
+    "Ncumulative": "-88,1642838749731",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-04-07 00:00:00",
-    "Cumulative": "-70,0054999999999",
-    "TGO": "No"
+    "Tcumulative": "-70,0054999999999",
+    "Ncumulative": "-88,1642838749731",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-04-07 16:00:00",
+    "Tcumulative": "-71,4367499999999",
+    "Ncumulative": "-90,0101768178107",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-04-11 00:00:00",
-    "Cumulative": "-76,1714999999999",
-    "TGO": "No"
+    "Tcumulative": "-76,1714999999999",
+    "Ncumulative": "-95,8068913705548",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-04-15 00:00:00",
-    "Cumulative": "-78,7847499999999",
-    "TGO": "No"
+    "Tcumulative": "-78,7847499999999",
+    "Ncumulative": "-99,5300247680806",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-04-15 10:45:00",
+    "Tcumulative": "-79,1197499999999",
+    "Ncumulative": "-100,031490014014",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-04-16 10:30:00",
-    "Cumulative": "-80,0319999999999",
-    "TGO": "Yes"
+    "Tcumulative": "-80,0319999999999",
+    "Ncumulative": "-101,355465286609",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-04-19 00:00:00",
-    "Cumulative": "-83,5432499999998",
-    "TGO": "No"
+    "Tcumulative": "-83,5432499999998",
+    "Ncumulative": "-105,805943251828",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-04-20 14:00:00",
+    "Tcumulative": "-87,0027499999998",
+    "Ncumulative": "-110,022263675817",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-04-23 00:00:00",
-    "Cumulative": "-88,3269999999997",
-    "TGO": "No"
+    "Tcumulative": "-88,3269999999997",
+    "Ncumulative": "-112,053883172565",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-04-25 09:45:00",
-    "Cumulative": "-90,0664999999997",
-    "TGO": "Yes"
+    "Tcumulative": "-90,0664999999997",
+    "Ncumulative": "-114,669355361527",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-04-27 00:00:00",
-    "Cumulative": "-92,8804999999998",
-    "TGO": "No"
+    "Tcumulative": "-92,8804999999998",
+    "Ncumulative": "-118,10057990883",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-04-28 09:15:00",
+    "Tcumulative": "-94,1979999999998",
+    "Ncumulative": "-120,019750752788",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-05-01 00:00:00",
-    "Cumulative": "-99,2689999999998",
-    "TGO": "No"
+    "Tcumulative": "-99,2689999999998",
+    "Ncumulative": "-126,266602941165",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-05-04 10:00:00",
-    "Cumulative": "-100,01675",
-    "TGO": "Yes"
+    "Tcumulative": "-100,01675",
+    "Ncumulative": "-127,632224288096",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-05-05 00:00:00",
-    "Cumulative": "-100,26",
-    "TGO": "No"
+    "Tcumulative": "-100,26",
+    "Ncumulative": "-128,056198824241",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-05-06 13:45:00",
+    "Tcumulative": "-101,8425",
+    "Ncumulative": "-130,047777283775",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-05-09 00:00:00",
-    "Cumulative": "-104,654",
-    "TGO": "No"
+    "Tcumulative": "-104,654",
+    "Ncumulative": "-133,810351733479",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-05-12 14:15:00",
+    "Tcumulative": "-109,41625",
+    "Ncumulative": "-140,028289358374",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-05-13 00:00:00",
-    "Cumulative": "-109,76525",
-    "TGO": "No"
+    "Tcumulative": "-109,76525",
+    "Ncumulative": "-140,55779346751",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-05-13 10:45:00",
-    "Cumulative": "-110,00575",
-    "TGO": "Yes"
+    "Tcumulative": "-110,00575",
+    "Ncumulative": "-140,972940690144",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-05-17 00:00:00",
-    "Cumulative": "-115,51",
-    "TGO": "No"
+    "Tcumulative": "-115,51",
+    "Ncumulative": "-148,069569019702",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-05-17 13:45:00",
+    "Tcumulative": "-117,1545",
+    "Ncumulative": "-150,069427628828",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-05-21 00:00:00",
-    "Cumulative": "-119,6225",
-    "TGO": "No"
+    "Tcumulative": "-119,6225",
+    "Ncumulative": "-153,47041667001",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-05-21 10:00:00",
-    "Cumulative": "-120,02925",
-    "TGO": "Yes"
+    "Tcumulative": "-120,02925",
+    "Ncumulative": "-154,047778933548",
+    "TGO": "Yes",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-05-23 10:45:00",
+    "Tcumulative": "-124,9835",
+    "Ncumulative": "-160,027744030848",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-05-25 00:00:00",
-    "Cumulative": "-128,079",
-    "TGO": "No"
+    "Tcumulative": "-128,079",
+    "Ncumulative": "-163,917749735555",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-05-25 13:00:00",
-    "Cumulative": "-130,0555",
-    "TGO": "Yes"
+    "Tcumulative": "-130,0555",
+    "Ncumulative": "-166,188033239413",
+    "TGO": "Yes",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-05-26 13:45:00",
+    "Tcumulative": "-133,43375",
+    "Ncumulative": "-170,076017882283",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-05-28 15:30:00",
-    "Cumulative": "-140,0475",
-    "TGO": "Yes"
+    "Tcumulative": "-140,0475",
+    "Ncumulative": "-177,750974296744",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-05-29 00:00:00",
-    "Cumulative": "-140,3105",
-    "TGO": "No"
+    "Tcumulative": "-140,3105",
+    "Ncumulative": "-178,108010411514",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-05-29 13:00:00",
+    "Tcumulative": "-141,9045",
+    "Ncumulative": "-180,019818516441",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-06-01 15:30:00",
-    "Cumulative": "-150,0495",
-    "TGO": "Yes"
+    "Tcumulative": "-150,0495",
+    "Ncumulative": "-189,753697811745",
+    "TGO": "Yes",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-06-01 16:45:00",
+    "Tcumulative": "-150,26925",
+    "Ncumulative": "-190,032536725602",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-06-02 00:00:00",
-    "Cumulative": "-150,31175",
-    "TGO": "No"
+    "Tcumulative": "-150,31175",
+    "Ncumulative": "-190,107291050754",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-06-05 12:30:00",
+    "Tcumulative": "-158,277",
+    "Ncumulative": "-200,002301321061",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-06-06 00:00:00",
-    "Cumulative": "-158,69625",
-    "TGO": "No"
+    "Tcumulative": "-158,69625",
+    "Ncumulative": "-200,642907499301",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-06-06 16:00:00",
-    "Cumulative": "-160,00225",
-    "TGO": "Yes"
+    "Tcumulative": "-160,00225",
+    "Ncumulative": "-202,378358876219",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-06-10 00:00:00",
-    "Cumulative": "-163,39375",
-    "TGO": "No"
+    "Tcumulative": "-163,39375",
+    "Ncumulative": "-207,369163464748",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-06-11 07:45:00",
+    "Tcumulative": "-165,435",
+    "Ncumulative": "-210,027929444726",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-06-14 00:00:00",
-    "Cumulative": "-169,05875",
-    "TGO": "No"
+    "Tcumulative": "-169,05875",
+    "Ncumulative": "-214,911324190649",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-06-14 11:00:00",
-    "Cumulative": "-170,086",
-    "TGO": "Yes"
+    "Tcumulative": "-170,086",
+    "Ncumulative": "-216,117094069185",
+    "TGO": "Yes",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-06-15 14:45:00",
+    "Tcumulative": "-173,2895",
+    "Ncumulative": "-220,006462399951",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-06-18 00:00:00",
-    "Cumulative": "-174,379",
-    "TGO": "No"
+    "Tcumulative": "-174,379",
+    "Ncumulative": "-221,793772116442",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-06-20 11:30:00",
-    "Cumulative": "-180,016749999999",
-    "TGO": "Yes"
+    "Tcumulative": "-180,016749999999",
+    "Ncumulative": "-228,667469653787",
+    "TGO": "Yes",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-06-20 17:00:00",
+    "Tcumulative": "-181,080249999999",
+    "Ncumulative": "-230,004845221623",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-06-22 00:00:00",
-    "Cumulative": "-183,191999999999",
-    "TGO": "No"
+    "Tcumulative": "-183,191999999999",
+    "Ncumulative": "-232,540418315858",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-06-26 00:00:00",
-    "Cumulative": "-187,026499999999",
-    "TGO": "No"
+    "Tcumulative": "-187,026499999999",
+    "Ncumulative": "-237,800322703358",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-06-26 15:15:00",
+    "Tcumulative": "-188,806499999999",
+    "Ncumulative": "-240,040588858861",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-06-27 11:15:00",
-    "Cumulative": "-190,007499999999",
-    "TGO": "Yes"
+    "Tcumulative": "-190,007499999999",
+    "Ncumulative": "-241,535538011079",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-06-30 00:00:00",
-    "Cumulative": "-191,388249999999",
-    "TGO": "No"
+    "Tcumulative": "-191,388249999999",
+    "Ncumulative": "-243,712596582857",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-07-04 00:00:00",
-    "Cumulative": "-194,504749999999",
-    "TGO": "No"
+    "Tcumulative": "-194,504749999999",
+    "Ncumulative": "-247,999177506284",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-07-04 13:00:00",
+    "Tcumulative": "-196,212749999999",
+    "Ncumulative": "-250,041043720288",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-07-06 15:15:00",
-    "Cumulative": "-200,058499999999",
-    "TGO": "Yes"
+    "Tcumulative": "-200,058499999999",
+    "Ncumulative": "-255,069208289164",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-07-08 00:00:00",
-    "Cumulative": "-201,691999999999",
-    "TGO": "No"
+    "Tcumulative": "-201,691999999999",
+    "Ncumulative": "-257,319165398218",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-07-09 11:45:00",
+    "Tcumulative": "-203,702249999999",
+    "Ncumulative": "-260,050354322871",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-07-12 00:00:00",
-    "Cumulative": "-206,804999999999",
-    "TGO": "No"
+    "Tcumulative": "-206,804999999999",
+    "Ncumulative": "-264,185228800221",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-07-15 12:45:00",
-    "Cumulative": "-210,008999999999",
-    "TGO": "Yes"
+    "Tcumulative": "-210,008999999999",
+    "Ncumulative": "-268,722403415495",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-07-16 00:00:00",
-    "Cumulative": "-210,274749999999",
-    "TGO": "No"
+    "Tcumulative": "-210,274749999999",
+    "Ncumulative": "-269,174390949417",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-07-17 08:15:00",
+    "Tcumulative": "-210,748749999999",
+    "Ncumulative": "-270,014000434791",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-07-20 00:00:00",
-    "Cumulative": "-216,695499999999",
-    "TGO": "No"
+    "Tcumulative": "-216,695499999999",
+    "Ncumulative": "-277,428570166176",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-07-21 10:00:00",
+    "Tcumulative": "-218,679999999999",
+    "Ncumulative": "-280,010769355733",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-07-21 13:15:00",
-    "Cumulative": "-220,037499999999",
-    "TGO": "Yes"
+    "Tcumulative": "-220,037499999999",
+    "Ncumulative": "-281,508908048581",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-07-24 00:00:00",
-    "Cumulative": "-223,875249999999",
-    "TGO": "No"
+    "Tcumulative": "-223,875249999999",
+    "Ncumulative": "-286,463795697694",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-07-26 12:00:00",
+    "Tcumulative": "-226,458999999999",
+    "Ncumulative": "-290,021203130734",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-07-28 00:00:00",
-    "Cumulative": "-228,893749999999",
-    "TGO": "No"
+    "Tcumulative": "-228,893749999999",
+    "Ncumulative": "-293,189659513453",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-07-28 13:30:00",
-    "Cumulative": "-230,060999999999",
-    "TGO": "Yes"
+    "Tcumulative": "-230,060999999999",
+    "Ncumulative": "-294,682020605275",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-08-01 00:00:00",
-    "Cumulative": "-233,467499999999",
-    "TGO": "No"
+    "Tcumulative": "-233,467499999999",
+    "Ncumulative": "-299,546547196997",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-08-01 10:45:00",
+    "Tcumulative": "-233,765749999999",
+    "Ncumulative": "-300,020398827748",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-08-05 00:00:00",
-    "Cumulative": "-238,808749999999",
-    "TGO": "No"
+    "Tcumulative": "-238,808749999999",
+    "Ncumulative": "-306,555683888418",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-08-05 16:00:00",
-    "Cumulative": "-240,039249999999",
-    "TGO": "Yes"
+    "Tcumulative": "-240,039249999999",
+    "Ncumulative": "-308,13138068712",
+    "TGO": "Yes",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-08-06 16:30:00",
+    "Tcumulative": "-241,379999999999",
+    "Ncumulative": "-310,01751869573",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-08-09 00:00:00",
-    "Cumulative": "-244,277749999999",
-    "TGO": "No"
+    "Tcumulative": "-244,277749999999",
+    "Ncumulative": "-313,700970951099",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-08-13 00:00:00",
-    "Cumulative": "-248,302310880828",
-    "TGO": "No"
+    "Tcumulative": "-248,302310880828",
+    "Ncumulative": "-319,552263048882",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-08-13 03:15:00",
+    "Tcumulative": "-248,436066062175",
+    "Ncumulative": "-320,00100158722",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-08-14 17:30:00",
-    "Cumulative": "-250,010261658029",
-    "TGO": "Yes"
+    "Tcumulative": "-250,010261658029",
+    "Ncumulative": "-325,217194005194",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-08-17 00:00:00",
-    "Cumulative": "-252,156999999998",
-    "TGO": "No"
+    "Tcumulative": "-252,156999999998",
+    "Ncumulative": "-328,667310242571",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-08-19 07:45:00",
+    "Tcumulative": "-252,812999999998",
+    "Ncumulative": "-330,012820683237",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-08-21 00:00:00",
-    "Cumulative": "-256,066499999998",
-    "TGO": "No"
+    "Tcumulative": "-256,066499999998",
+    "Ncumulative": "-334,259699413337",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-08-23 09:30:00",
-    "Cumulative": "-260,018499999998",
-    "TGO": "Yes"
+    "Tcumulative": "-260,018499999998",
+    "Ncumulative": "-339,257314189149",
+    "TGO": "Yes",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-08-23 11:45:00",
+    "Tcumulative": "-260,765749999998",
+    "Ncumulative": "-340,09478981987",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-08-25 00:00:00",
-    "Cumulative": "-263,048249999998",
-    "TGO": "No"
+    "Tcumulative": "-263,048249999998",
+    "Ncumulative": "-343,023843506531",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-08-27 13:45:00",
+    "Tcumulative": "-268,706249999998",
+    "Ncumulative": "-350,011538273557",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-08-28 10:15:00",
-    "Cumulative": "-270,055749999998",
-    "TGO": "Yes"
+    "Tcumulative": "-270,055749999998",
+    "Ncumulative": "-351,614521993656",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-08-29 00:00:00",
-    "Cumulative": "-271,599999999998",
-    "TGO": "No"
+    "Tcumulative": "-271,599999999998",
+    "Ncumulative": "-353,451649132123",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-09-01 12:15:00",
+    "Tcumulative": "-276,954749999998",
+    "Ncumulative": "-360,03023310532",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-09-02 00:00:00",
-    "Cumulative": "-277,818499999998",
-    "TGO": "No"
+    "Tcumulative": "-277,818499999998",
+    "Ncumulative": "-361,120521987085",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-09-03 09:15:00",
-    "Cumulative": "-280,031999999998",
-    "TGO": "Yes"
+    "Tcumulative": "-280,031999999998",
+    "Ncumulative": "-363,843825104097",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-09-06 00:00:00",
-    "Cumulative": "-283,909249999998",
-    "TGO": "No"
+    "Tcumulative": "-283,909249999998",
+    "Ncumulative": "-368,91212246262",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-09-07 08:45:00",
+    "Tcumulative": "-284,613249999998",
+    "Ncumulative": "-370,029897502748",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-09-10 00:00:00",
-    "Cumulative": "-286,399249999998",
-    "TGO": "No"
+    "Tcumulative": "-286,399249999998",
+    "Ncumulative": "-372,399516494352",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-09-11 12:15:00",
-    "Cumulative": "-290,083749999998",
-    "TGO": "Yes"
+    "Tcumulative": "-290,083749999998",
+    "Ncumulative": "-376,706912082636",
+    "TGO": "Yes",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-09-13 10:45:00",
+    "Tcumulative": "-292,623999999998",
+    "Ncumulative": "-380,008166689533",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-09-14 00:00:00",
-    "Cumulative": "-293,709749999998",
-    "TGO": "No"
+    "Tcumulative": "-293,709749999998",
+    "Ncumulative": "-381,348810666083",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-09-18 00:00:00",
-    "Cumulative": "-298,546999999998",
-    "TGO": "No"
+    "Tcumulative": "-298,546999999998",
+    "Ncumulative": "-387,648596432358",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-09-19 12:00:00",
-    "Cumulative": "-300,048249999998",
-    "TGO": "Yes"
+    "Tcumulative": "-300,048249999998",
+    "Ncumulative": "-389,744446612283",
+    "TGO": "Yes",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-09-19 12:45:00",
+    "Tcumulative": "-300,342499999998",
+    "Ncumulative": "-390,069141196346",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-09-22 00:00:00",
-    "Cumulative": "-304,355749999998",
-    "TGO": "No"
+    "Tcumulative": "-304,355749999998",
+    "Ncumulative": "-394,984396834022",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-09-24 10:15:00",
+    "Tcumulative": "-308,508999999998",
+    "Ncumulative": "-400,094594298292",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-09-24 15:30:00",
-    "Cumulative": "-310,016749999998",
-    "TGO": "Yes"
+    "Tcumulative": "-310,016749999998",
+    "Ncumulative": "-401,822426258281",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-09-26 00:00:00",
-    "Cumulative": "-310,702249999998",
-    "TGO": "No"
+    "Tcumulative": "-310,702249999998",
+    "Ncumulative": "-402,861626095107",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-09-30 00:00:00",
-    "Cumulative": "-314,477249999998",
-    "TGO": "No"
+    "Tcumulative": "-314,477249999998",
+    "Ncumulative": "-407,954343025074",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-10-01 13:30:00",
+    "Tcumulative": "-316,118499999998",
+    "Ncumulative": "-410,004503564827",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-10-04 00:00:00",
-    "Cumulative": "-318,982249999998",
-    "TGO": "No"
+    "Tcumulative": "-318,982249999998",
+    "Ncumulative": "-413,647428240168",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-10-05 12:00:00",
-    "Cumulative": "-320,022249999998",
-    "TGO": "Yes"
+    "Tcumulative": "-320,022249999998",
+    "Ncumulative": "-415,145436324674",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-10-08 00:00:00",
-    "Cumulative": "-322,502749999998",
-    "TGO": "No"
+    "Tcumulative": "-322,502749999998",
+    "Ncumulative": "-418,280277617277",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-10-09 12:45:00",
+    "Tcumulative": "-323,869749999998",
+    "Ncumulative": "-420,04307133295",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-10-12 00:00:00",
-    "Cumulative": "-324,020499999998",
-    "TGO": "No"
+    "Tcumulative": "-324,020499999998",
+    "Ncumulative": "-420,383526023664",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-10-16 00:00:00",
-    "Cumulative": "-329,749749999998",
-    "TGO": "No"
+    "Tcumulative": "-329,749749999998",
+    "Ncumulative": "-427,518763265471",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-10-16 09:30:00",
-    "Cumulative": "-330,050749999998",
-    "TGO": "Yes"
+    "Tcumulative": "-330,050749999998",
+    "Ncumulative": "-427,921107543993",
+    "TGO": "Yes",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-10-17 14:45:00",
+    "Tcumulative": "-331,616749999998",
+    "Ncumulative": "-430,002494673651",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-10-20 00:00:00",
-    "Cumulative": "-334,230749999998",
-    "TGO": "No"
+    "Tcumulative": "-334,230749999998",
+    "Ncumulative": "-433,266399473821",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-10-24 00:00:00",
-    "Cumulative": "-335,846999999998",
-    "TGO": "No"
+    "Tcumulative": "-335,846999999998",
+    "Ncumulative": "-435,47412643318",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-10-28 00:00:00",
-    "Cumulative": "-337,447499999998",
-    "TGO": "No"
+    "Tcumulative": "-337,447499999998",
+    "Ncumulative": "-437,674849296544",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-10-30 13:45:00",
+    "Tcumulative": "-339,233749999998",
+    "Ncumulative": "-440,028366700636",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-11-01 00:00:00",
-    "Cumulative": "-339,559499999998",
-    "TGO": "No"
+    "Tcumulative": "-339,559499999998",
+    "Ncumulative": "-440,534387817316",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-11-02 10:45:00",
-    "Cumulative": "-340,025249999998",
-    "TGO": "Yes"
+    "Tcumulative": "-340,025249999998",
+    "Ncumulative": "-441,260576658632",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-11-05 00:00:00",
-    "Cumulative": "-340,809749999998",
-    "TGO": "No"
+    "Tcumulative": "-340,809749999998",
+    "Ncumulative": "-442,303003577812",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-11-09 00:00:00",
-    "Cumulative": "-344,813999999998",
-    "TGO": "No"
+    "Tcumulative": "-344,813999999998",
+    "Ncumulative": "-447,115526844433",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-11-13 00:00:00",
-    "Cumulative": "-345,440749999998",
-    "TGO": "No"
+    "Tcumulative": "-345,440749999998",
+    "Ncumulative": "-448,039948633313",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-11-17 00:00:00",
-    "Cumulative": "-346,224249999998",
-    "TGO": "No"
+    "Tcumulative": "-346,224249999998",
+    "Ncumulative": "-449,105973422141",
+    "TGO": "No",
+    "NTGO": "No"
+  },
+  {
+    "Datum": "2017-11-17 11:30:00",
+    "Tcumulative": "-346,978249999998",
+    "Ncumulative": "-450,018700547263",
+    "TGO": "No",
+    "NTGO": "Yes"
   },
   {
     "Datum": "2017-11-21 00:00:00",
-    "Cumulative": "-348,291999999998",
-    "TGO": "No"
+    "Tcumulative": "-348,291999999998",
+    "Ncumulative": "-451,629746139243",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-11-25 00:00:00",
-    "Cumulative": "-348,614249999998",
-    "TGO": "No"
+    "Tcumulative": "-348,614249999998",
+    "Ncumulative": "-452,144096432524",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-11-29 00:00:00",
-    "Cumulative": "-348,909749999998",
-    "TGO": "No"
+    "Tcumulative": "-348,909749999998",
+    "Ncumulative": "-452,592234597293",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-12-03 00:00:00",
-    "Cumulative": "-349,652999999998",
-    "TGO": "No"
+    "Tcumulative": "-349,652999999998",
+    "Ncumulative": "-453,620375221912",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-12-07 00:00:00",
-    "Cumulative": "-349,652999999998",
-    "TGO": "No"
+    "Tcumulative": "-349,652999999998",
+    "Ncumulative": "-453,620375221912",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-12-11 00:00:00",
-    "Cumulative": "-349,850499999998",
-    "TGO": "No"
+    "Tcumulative": "-349,850499999998",
+    "Ncumulative": "-453,890823517127",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-12-12 12:45:00",
-    "Cumulative": "-350,050999999998",
-    "TGO": "Yes"
+    "Tcumulative": "-350,050999999998",
+    "Ncumulative": "-454,16041181346",
+    "TGO": "Yes",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-12-15 00:00:00",
-    "Cumulative": "-350,588249999998",
-    "TGO": "No"
+    "Tcumulative": "-350,588249999998",
+    "Ncumulative": "-454,872033514902",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-12-19 00:00:00",
-    "Cumulative": "-351,955749999998",
-    "TGO": "No"
+    "Tcumulative": "-351,955749999998",
+    "Ncumulative": "-456,584698993951",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-12-23 00:00:00",
-    "Cumulative": "-351,955749999998",
-    "TGO": "No"
+    "Tcumulative": "-351,955749999998",
+    "Ncumulative": "-456,584698993951",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-12-27 00:00:00",
-    "Cumulative": "-352,400249999998",
-    "TGO": "No"
+    "Tcumulative": "-352,400249999998",
+    "Ncumulative": "-457,230009998734",
+    "TGO": "No",
+    "NTGO": "No"
   },
   {
     "Datum": "2017-12-31 00:00:00",
-    "Cumulative": "-353,135499999998",
-    "TGO": "No"
+    "Tcumulative": "-353,135499999998",
+    "Ncumulative": "-458,323155883926",
+    "TGO": "No",
+    "NTGO": "No"
   }
 ]

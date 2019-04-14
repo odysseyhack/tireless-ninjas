@@ -5,8 +5,8 @@
         <div class="small-card-content">
           <img src="../assets/ic_energy.svg" alt="">
           <div class="vertical-text">
-            <span class="small-label">Green energy produced</span>
-            <span class="green-production">{{totalProduced}} kWh</span>
+            <span class="small-label">Tradable green energy produced</span>
+            <span class="green-production">{{totalTradable}} kWh</span>
           </div>
         </div>
       </div>
@@ -14,8 +14,28 @@
         <div class="small-card-content">
           <img src="../assets/ic_certificate.svg" alt="">
           <div class="vertical-text">
-            <h2 class="certificates">{{ numberOfCertificates }} certificates</h2>
-            <span class="small-label">Last certificate granted {{ dateLatestCertificate }}</span>
+            <h2 class="certificates">{{ tradableCertificates }} tradable certificates</h2>
+            <span class="small-label">Last certificate granted {{ dateLatestTradable }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-wrapper" style="margin-top: -250px;">
+      <div class="card top-card">
+        <div class="small-card-content">
+          <img src="../assets/ic_energy.svg" alt="">
+          <div class="vertical-text">
+            <span class="small-label">Non-tradable green energy produced</span>
+            <span class="green-production">{{totalNontradable}} kWh</span>
+          </div>
+        </div>
+      </div>
+      <div class="card top-card">
+        <div class="small-card-content">
+          <img src="../assets/ic_certificate.svg" alt="">
+          <div class="vertical-text">
+            <h2 class="certificates">{{ nonTradableCertificates }} non-tradable certificates</h2>
+            <span class="small-label">Last certificate granted {{ dateLatestNonTradable }}</span>
           </div>
         </div>
       </div>
@@ -50,9 +70,14 @@ export default {
     return {
       production: 0,
       productionList: [],
-      totalProduced: 0,
-      numberOfCertificates: 0,
-      dateLatestCertificate: null,
+      tradableList: [],
+      nonTradableList: [],
+      totalTradable: 0,
+      totalNontradable: 0,
+      tradableCertificates: 0,
+      nonTradableCertificates: 0,
+      dateLatestTradable: null,
+      dateLatestNonTradable: null,
       colorArray: [],
       pointRadiusArray: [],
       timeList: [],
@@ -63,12 +88,17 @@ export default {
   },
   mounted() {
 
-    this.productionList = this.getValues(householdData, 'Cumulative');
+    this.tradableList = this.getValues(householdData, 'Tcumulative');
+    this.nonTradableList = this.getValues(householdData, 'Ncumulative');
+
     this.timeList = this.getValues(householdData, 'Datum');
 
-    this.totalProduced = parseFloat(this.getTotalProduced(householdData)) * -1;
-    this.numberOfCertificates = Math.round(this.totalProduced / 10);
-    this.dateLatestCertificate = this.getDateLatestCertificate(householdData);
+    this.totalTradable = parseFloat(this.getTotalProduced(householdData, 'Tcumulative')) * -1;
+    this.totalNontradable = parseFloat(this.getTotalProduced(householdData, 'Ncumulative')) * -1;
+    this.tradableCertificates = Math.round(this.totalTradable / 10);
+    this.nonTradableCertificates = Math.round(this.totalNontradable / 10);
+    this.dateLatestTradable = this.getDateLatestCertificate(householdData, 'TGO');
+    this.dateLatestNonTradable = this.getDateLatestCertificate(householdData, 'NTGO');
 
     this.fillData();
     this.setOptions();
@@ -79,9 +109,9 @@ export default {
       this.options = {
         responsive: true,
         maintainAspectRatio: false,
-        legend: {
-          display: false
-        },
+        // legend: {
+        //   display: false
+        // },
         scales: {
           xAxes: [{
               gridLines: {
@@ -125,10 +155,19 @@ export default {
         labels: this.timeList,
         datasets: [
           {
-            label: 'Something',
+            label: 'Tradable',
             backgroundColor: 'transparent',
             borderColor: '#FD8179',
-            data: this.productionList,
+            data: this.tradableList,
+            pointBackgroundColor: this.colorArray,
+            pointBorderColor: this.colorArray,
+            pointRadius: this.pointRadiusArray
+          },
+          {
+            label: 'Non-tradable',
+            backgroundColor: 'transparent',
+            borderColor: 'blue',
+            data: this.nonTradableList,
             pointBackgroundColor: this.colorArray,
             pointBorderColor: this.colorArray,
             pointRadius: this.pointRadiusArray
@@ -136,13 +175,13 @@ export default {
         ]
       }
     },
-    getDateLatestCertificate(arrayOfObjects) {
-      let tgos = arrayOfObjects.filter((element) => element['TGO'] === 'Yes');
+    getDateLatestCertificate(arrayOfObjects, key) {
+      let tgos = arrayOfObjects.filter((element) => element[key] === 'Yes');
       let date = new Date(tgos[tgos.length - 1]['Datum']);
       return date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
     },
-    getTotalProduced(arrayOfObjects) {
-      return arrayOfObjects[arrayOfObjects.length - 1]['Cumulative'];
+    getTotalProduced(arrayOfObjects, key) {
+      return arrayOfObjects[arrayOfObjects.length - 1][key];
     },
     getValues(arrayOfObjects, key, min, max) {
       let result = [];
@@ -150,17 +189,10 @@ export default {
       let maximum = max || arrayOfObjects.length - 1; 
       for(let i = mininmum; i < maximum; i++) {
           let value = '';
-          if (key === 'Cumulative') {
+          if (key === 'Ncumulative' || key === 'Tcumulative') {
             value = parseFloat(arrayOfObjects[i][key]) * -1;
           } else {
             value = new Date(arrayOfObjects[i][key]).getDate() + '-' + (new Date(arrayOfObjects[i][key]).getMonth() + 1) + '-' + new Date(arrayOfObjects[i][key]).getFullYear();
-          }
-          if (arrayOfObjects[i]['TGO'] === 'Yes') {
-            this.colorArray.push('#00ff00');
-            this.pointRadiusArray.push(6);
-          } else {
-            this.colorArray.push('#FD8179');
-            this.pointRadiusArray.push(3);
           }
           result.push(value);
       }
