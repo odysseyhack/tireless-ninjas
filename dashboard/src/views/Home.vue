@@ -6,7 +6,7 @@
           <img src="../assets/ic_energy.svg" alt="">
           <div class="vertical-text">
             <span class="small-label">Green energy produced</span>
-            <span class="green-production">2397 kWh</span>
+            <span class="green-production">{{totalProduced}} kWh</span>
           </div>
         </div>
       </div>
@@ -14,17 +14,18 @@
         <div class="small-card-content">
           <img src="../assets/ic_certificate.svg" alt="">
           <div class="vertical-text">
-            <h2 class="certificates">5 certificates</h2>
-            <span class="small-label">Last certificate granted Jan 1 2019</span>
+            <h2 class="certificates">{{ numberOfCertificates }} certificates</h2>
+            <span class="small-label">Last certificate granted {{ dateLatestCertificate }}</span>
           </div>
         </div>
       </div>
     </div>
     <div class="card large-card">
-
+        <h2>Your green energy profile</h2>
+        
         <div class="chart-container">
           <line-chart
-            :chartdata="chartdata"
+            :chartData="chartdata"
             :options="options"/>
         </div>
       </div>
@@ -41,15 +42,41 @@ import { web3 } from "../main.js";
 
 import LineChart from '../components/LineChart.vue';
 
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
 export default {
   name: "home",
   data() {
     return {
       production: 0,
       productionList: [],
+      totalProduced: 0,
+      numberOfCertificates: 0,
+      dateLatestCertificate: null,
+      colorArray: [],
+      pointRadiusArray: [],
       timeList: [],
       chartdata: null,
-      options: {
+      options: null,
+      currentEnergy: ''
+    };
+  },
+  mounted() {
+
+    this.productionList = this.getValues(householdData, 'Cumulative');
+    this.timeList = this.getValues(householdData, 'Datum');
+
+    this.totalProduced = parseFloat(this.getTotalProduced(householdData)) * -1;
+    this.numberOfCertificates = Math.round(this.totalProduced / 10);
+    this.dateLatestCertificate = this.getDateLatestCertificate(householdData);
+
+    this.fillData();
+    this.setOptions();
+  },
+  methods: {
+    
+    setOptions() {
+      this.options = {
         responsive: true,
         maintainAspectRatio: false,
         legend: {
@@ -62,7 +89,7 @@ export default {
               },
               scaleLabel: {
                 display: true,
-                labelString: 'Time',
+                labelString: 'Date',
                 fontStyle: 'bold'
               }
           }],
@@ -72,41 +99,70 @@ export default {
               },
               scaleLabel: {
                 display: true,
-                labelString: 'Production in MWh',
+                labelString: 'Production in kWh',
                 fontStyle: 'bold'
               }   
           }]
+        },
+        tooltips: {
+          callbacks: {
+            label: function(tooltipItem, data) {
+              let label = '';
+              let borderColor = data.datasets[tooltipItem.datasetIndex].pointBackgroundColor[tooltipItem.index];
+              if (borderColor === '#00ff00') {
+                label = tooltipItem.yLabel + ' kWh => ' + 'TGO issued';
+              } else {
+                label = 'Energy: ' + tooltipItem.yLabel + ' kWh';
+              }
+              return label;
+            }
+          }
         }
-      }
-    };
-  },
-  mounted() {
-
-    this.productionList = this.getValues(householdData, 'Cumulative');
-    this.timeList = this.getValues(householdData, 'Datum');
-    this.fillData();
-  },
-  computed() {
-
-  },
-  methods: {
+      };
+    },
     fillData() {
       this.chartdata = {
         labels: this.timeList,
         datasets: [
           {
-            label: '',
+            label: 'Something',
             backgroundColor: 'transparent',
             borderColor: '#FD8179',
-            data: this.productionList
+            data: this.productionList,
+            pointBackgroundColor: this.colorArray,
+            pointBorderColor: this.colorArray,
+            pointRadius: this.pointRadiusArray
           }
         ]
       }
     },
-    getValues(arrayOfObjects, key) {
+    getDateLatestCertificate(arrayOfObjects) {
+      let tgos = arrayOfObjects.filter((element) => element['TGO'] === 'Yes');
+      let date = new Date(tgos[tgos.length - 1]['Datum']);
+      return date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
+    },
+    getTotalProduced(arrayOfObjects) {
+      return arrayOfObjects[arrayOfObjects.length - 1]['Cumulative'];
+    },
+    getValues(arrayOfObjects, key, min, max) {
       let result = [];
-      for(let element of arrayOfObjects) {
-        result.push(element[key]);
+      let mininmum = min || 0;
+      let maximum = max || arrayOfObjects.length - 1; 
+      for(let i = mininmum; i < maximum; i++) {
+          let value = '';
+          if (key === 'Cumulative') {
+            value = parseFloat(arrayOfObjects[i][key]) * -1;
+          } else {
+            value = new Date(arrayOfObjects[i][key]).getDate() + '-' + (new Date(arrayOfObjects[i][key]).getMonth() + 1) + '-' + new Date(arrayOfObjects[i][key]).getFullYear();
+          }
+          if (arrayOfObjects[i]['TGO'] === 'Yes') {
+            this.colorArray.push('#00ff00');
+            this.pointRadiusArray.push(6);
+          } else {
+            this.colorArray.push('#FD8179');
+            this.pointRadiusArray.push(3);
+          }
+          result.push(value);
       }
       return result;
     },
@@ -136,12 +192,17 @@ export default {
 </script>
 
 <style lang="scss">
-
+.chart-bar {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+}
 .certificates {
   margin: 0;
 }
 .large-card {
-  margin-top: 100px;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 .small-card-content {
   display: flex;
