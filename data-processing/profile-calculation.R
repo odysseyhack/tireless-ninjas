@@ -13,14 +13,22 @@ for (i in c(1:100)){
   colnames(data)[1]="Datum"
   colnames(data)[3]="Backdelivery"
   colnames(data)[4]="Delivery"
-  cumulative=0
+  Tcumulative=0
+  Ncumulative=0
   for (row in c(1:nrow(data))){
     
     if (data$net[row] < 0){
-      cumulative=cumulative+(data$net[row]*0.25/1e3)
-      data$cumulative[row]=cumulative
+      Tcumulative=Tcumulative+(data$net[row]*0.25/1e3)
+      Ncumulative=Ncumulative+(data$Backdelivery[row]-runif(1,30,55))*0.25/1e3
+      data$Tcumulative[row]=Tcumulative
+      data$Ncumulative[row]=Ncumulative
     }else{
-      data$cumulative[row]=cumulative
+      data$Tcumulative[row]=Tcumulative
+      data$Ncumulative[row]=Ncumulative
+      if (data$Backdelivery [row]<0){
+      data$Ncumulative[row]=Ncumulative+(data$Backdelivery[row]-runif(1,30,55))*0.25/1e3  
+      }
+      
     }
 
     # if (abs(data$cumulative[row]) > 10){
@@ -28,29 +36,51 @@ for (i in c(1:100)){
     # } else {
     #   data$TGO[row]="N"
     # }
-    
     data$TGO[row]="No"
+    data$NTGO[row]="No"
   }
-  data=select(data,c("Datum","cumulative","TGO"))
-  min_cumulative=min(data$cumulative)
-  aantal_certificate=round(-1*(min_cumulative/10))
+  
+  data=select(data,c("Datum","Tcumulative","Ncumulative","TGO","NTGO"))
+  
+  min_Tcumulative=min(data$Tcumulative)
+  aantal_certificate=round(-1*(min_Tcumulative/10))
   for (h in c(1:aantal_certificate)){
     data1=data  
-    data1$cumulative=(data1$cumulative+h*10)
-    data1=subset(data1,data1$cumulative<0)
-    target=max(data1$cumulative)-h*10
-    index=which(data$cumulative==target)[1]
+    data1$Tcumulative=(data1$Tcumulative+h*10)
+    data1=subset(data1,data1$Tcumulative<0)
+    target=max(data1$Tcumulative)-h*10
+    index=which(data$Tcumulative==target)[1]
     data$TGO[index]="Yes"
   }
   
- write.csv2(data,file=paste0("C:/Users/604297/Desktop/certifified.homes/", list[i]), row.names = F)
+  min_Ncumulative=min(data$Ncumulative)
+  aantal_certificate=round(-1*(min_Ncumulative/10))
+  for (h in c(1:aantal_certificate)){
+    data1=data  
+    data1$Ncumulative=(data1$Ncumulative+h*10)
+    data1=subset(data1,data1$Ncumulative<0)
+    target=max(data1$Ncumulative)-h*10
+    index=which(data$Ncumulative==target)[1]
+    data$NTGO[index]="Yes"
+  }
+  
+  
+ #cleaning and saving the csv file
+ select=seq(1,35040,192*2)
+ data2=data[select,1]
+ data3=subset(data, data$TGO=="Yes" | data$NTGO=="Yes" | data$Datum %in% data2)
+
+ write.csv2(data3,file=paste0("C:/Users/604297/Desktop/certifified.homes/", list[i]), row.names = F)
 
 }
+
+##
 
 ###making profiles
 nedu=read.csv(file="./data/modeldata/ls/neduprofiel2018.csv",header=TRUE,sep=",",dec=",", stringsAsFactors = F)
 
 norm=1500*as.integer(nedu$E1A)[1:192]
+base_consmption=min(norm)
 pv=-4*profielPV[1:192]
 consumption=data$net[1:192]-pv
 
